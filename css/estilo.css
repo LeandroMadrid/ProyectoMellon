@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;  
+}
+
+body{
+    background-color: white;
+    color: black;
+    padding-top: 80px;
+}
+
+h2{
+    margin: 25px 50px;
+    padding: 10px;
+    text-align: left;
+    font-size: 2rem;
+    color: #ea625a;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+/*Header PC*/
+
+.topheader{
+    box-shadow: 0 4px 5px #e5e5e5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*Logo PC*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ea625a;
+}
+
+.imglogo{
+    height: 50px;
+    width: 50px; 
+}
+
+.topheader a{
+    text-decoration: none;
+}
+
+/*Menu PC*/
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    padding: 0 15px;
+}
+
+.menu a{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.menu li:hover{
+    animation: shake 0.6s infinite;
+}
+
+.open-menu, .close-menu{
+    display: none;
+}
+
+/*Footer PC*/
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.pie__copyright{
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+} 
+
+.pie__lista{
+    display: flex;
+    list-style: none;
+}
+
+.pie li{
+    padding: 0 15px;
+}
+
+.pie a{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 50px; 
+}
+
+/*Header y Footer Movil*/
+
+@media only screen and (max-width: 950px){
+    
+    .menu{
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        align-items: center;
+        background-color: grey;
+        height: 160vh;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    
+    .menu li{
+        padding: 0;
+    }
+    
+    .menu a{
+        color: white;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    
+    .open-menu, .close-menu{
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .close-menu{
+        align-self: flex-end;
+        padding: 20px 15px;
+    }
+    
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /*Estilos Footer Movil*/
+
+    .pie{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .pie__lista{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*Index Main PC*/
+
+@media only screen and (min-width: 950px){
+    .principal{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-template-areas: "titulo img"
+                             "parrafo img"
+                             "boton img";
+        margin: 25px;
+        align-items: center;  
+        justify-items: center;       
+    }
+
+    .principalImagen{
+        width: 100%;
+        max-width: 350px;
+        margin: 15px;
+    }
+
+    .principalTitulo{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ea625a;
+        margin: 10px;
+        grid-area: titulo;
+    }
+    
+    .principalParrafo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+        max-width: 450px;
+        margin: 20px auto;
+        grid-area: parrafo;
+    }
+    
+    .principalBoton{
+        text-decoration: none;
+        color: black;
+        background-color: #ea625a;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        grid-area: boton;
+        cursor: pointer;
+    }
+    
+    .principalBoton:hover{
+        color: white; 
+        animation: shake 0.6s infinite;
+    }
+
+    @keyframes shake {
+        0%{
+            transform: translate(0px,0px) rotate(0deg);
+        }
+        25%{
+            transform: translate(1px,1px) rotate(1deg);
+        }
+        50%{
+            transform: translate(-1px,-1px) rotate(-1deg);
+        }
+        75%{
+            transform: translate(2px,-1px) rotate(2deg);
+        }
+        100%{
+            transform: translate(-1px,1px) rotate(-1deg);
+        }
+    }
+    
+    .principalImagen{
+        position: relative;
+        grid-area: img;
+    }
+}
+
+
+/*Index Main Movil*/
+
+.principalImagen{
+    width: 80%;
+    max-width: 250px;
+    margin: 15px;
+}
+
+.principal{
+    text-align: center;
+}
+
+.principalInfoTitulo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ea625a;
+    margin: 0;
+}
+
+.principalParrafo{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    max-width: 450px;
+    margin: 20px;
+}
+
+.principalBoton{
+    text-decoration: none;
+    color: black;
+    background-color: #ea625a;
+    border-radius: 3px;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/*Main Servicios*/
+
+.servicios{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    grid-template-areas:"serv1 serv2 serv3"
+                         "t1     t2  t3"
+                         "p1     p2  p3";
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+.servicios h3{
+    font-size: 1.5rem;
+}
+
+.servicios p{
+    font-size: 1rem;
+}
+
+.servicios__diseño{
+    grid-area: serv1;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__desarrollo{
+    grid-area: serv2;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__marketing{
+    grid-area: serv3;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__diseño2{
+    grid-area: t1;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__desarrollo2{
+    grid-area: t2;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__marketing2{
+    grid-area: t3;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__diseñop{
+    grid-area: p1;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__desarrollop{
+    grid-area: p2;
+    padding: 10px;
+    text-align: left;
+}
+
+.servicios__marketingp{
+    grid-area: p3;
+    padding: 10px;
+    text-align: left;
+}
+
+.contenedor2{
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    justify-items: center;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+/*Main Servicios Movil*/
+
+@media only screen and (max-width: 950px){
+    .servicios{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 5px;
+        grid-template-areas:"serv1"
+                             "t1"
+                             "p1"
+                             "serv2"
+                             "t2"
+                             "p2"
+                             "serv3"
+                             "t3"
+                             "p3";
+        margin: 25px;
+        padding: 10px;
+        align-items: top;  
+        background-color: #e0e5e9;   
+        border-radius: 10px; 
+    }
+    
+    .servicios h3{
+        font-size: 1rem;
+    }
+    
+    .servicios p{
+        font-size: 1rem;
+    }
+    
+    .servicios__diseño{
+        grid-area: serv1;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__desarrollo{
+        grid-area: serv2;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__marketing{
+        grid-area: serv3;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__diseño2{
+        grid-area: t1;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__desarrollo2{
+        grid-area: t2;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__marketing2{
+        grid-area: t3;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__diseñop{
+        grid-area: p1;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__desarrollop{
+        grid-area: p2;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .servicios__marketingp{
+        grid-area: p3;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .contenedor2{
+        margin: 25px;
+        padding: 10px;
+        align-items: top;  
+        justify-items: center;  
+        background-color: #e0e5e9;   
+        border-radius: 10px; 
+    }
+}
+
+/*Main clientes PC*/
+
+.clientes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas:"cliente1 cliente2 cliente3"
+                         "cliente1p cliente2p cliente3p";
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+.servicios h3{
+    font-size: 1rem;
+}
+
+.servicios p{
+    font-size: 1rem;
+}
+
+.cliente1{
+    grid-area: cliente1;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente1p{
+    grid-area: cliente1p;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente2{
+    grid-area: cliente2;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente2p{
+    grid-area: cliente2p;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente3{
+    grid-area: cliente3;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente3p{
+    grid-area: cliente3p;
+    padding: 5px;
+    text-align: left;
+}
+
+.contenedor2{
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    justify-items: center;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+.clientes a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Main clientes Movil*/
+
+@media only screen and (max-width: 950px){
+    .clientes{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 5px;
+        grid-template-areas:"cliente1"
+                             "cliente1p"
+                             "cliente2"
+                             "cliente2p"
+                             "cliente3"
+                             "cliente3p";
+        margin: 25px;
+        padding: 10px;
+        align-items: top;  
+        background-color: #e0e5e9;   
+        border-radius: 10px; 
+    }
+    
+    .servicios h3{
+        font-size: 1rem;
+    }
+    
+    .servicios p{
+        font-size: 1rem;
+    }
+    
+    .cliente1{
+        grid-area: cliente1;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente1p{
+        grid-area: cliente1p;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente2{
+        grid-area: cliente2;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente2p{
+        grid-area: cliente2p;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente3{
+        grid-area: cliente3;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente3p{
+        grid-area: cliente3p;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .contenedor2{
+        margin: 25px;
+        padding: 10px;
+        align-items: top;  
+        justify-items: center;  
+        background-color: #e0e5e9;   
+        border-radius: 10px; 
+    }
+
+    .clientes a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+

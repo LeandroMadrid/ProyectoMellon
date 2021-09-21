@@ -94,7 +94,6 @@ p{
     padding: 15px;
     width: 90%;
     max-width: 980px;
-    margin: 0 auto;
 }
 
 .pie__copyright{
@@ -126,6 +125,7 @@ p{
     .menu{
         flex-direction: column;
         position: absolute;
+        z-index: 100;
         left: 0;
         top: 0;
         align-items: center;
@@ -217,21 +217,6 @@ p{
         grid-area: parrafo;
     }
     
-    .principalBoton{
-        text-decoration: none;
-        color: black;
-        background-color: #ea625a;
-        border-radius: 3px;
-        font-size: 1.5rem;
-        padding: 0.5rem 1rem;
-        grid-area: boton;
-        cursor: pointer;
-    }
-    
-    .principalBoton:hover{
-        color: white; 
-        animation: shake 0.6s infinite;
-    }
 
     @keyframes shake {
         0%{
@@ -259,6 +244,10 @@ p{
 
 
 /*Index Main Movil*/
+
+.principal{
+    margin: 25px;
+}
 
 .principalImagen{
     width: 80%;
@@ -633,4 +622,41 @@ p{
 }
 
 
+
+
+
+/*Contacto*/
+
+#contacto{
+    margin: 25px 50px;
+    padding: 10px;
+    text-align: left;
+    font-size: 2rem;
+    color: #ea625a;
+    font-weight: bold;
+}
+
+.input-group{
+    margin: 10px;
+}
+
+.mb-3{
+    margin: 10px;
+}
+
+.form-select{
+    margin: 10px;
+}
+
+.form-floating{
+    margin: 10px;
+}
+
+.form-check{
+    margin: 10px;
+}
+
+.botonesForm{
+    margin: 10px;
+}
 

@@ -628,13 +628,15 @@ p{
 /*Contacto*/
 
 #contacto{
-    margin: 25px 50px;
+    margin: 25px;
     padding: 10px;
     text-align: left;
     font-size: 2rem;
     color: #ea625a;
     font-weight: bold;
 }
+
+
 
 .input-group{
     margin: 10px;

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script defer src="../js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Mellon</title>
 </head>
 <body>
@@ -36,19 +37,48 @@
 
     <main>
         <h2 class="servicios__titulo">Servicios</h2>
-        <div class="servicios"> 
-            <h3 class="servicios__diseño">Diseño personalizado</h3>
-            <h3 class="servicios__desarrollo">Desarrollo Web</h3>
-            <h3 class="servicios__marketing">Marketing Digital y Redes</h3>
-        
-            <p class="servicios__diseño2">Mejoramos y desarrollamos tu marca</p>
-            <p class="servicios__desarrollo2">Desarrollo tu sitio de manera personalizada</p>
-            <p class="servicios__marketing2">Te ayudamos a alcanzar y estar en contacto con más clientes</p>
-        
-            <p class="servicios__diseñop">Es importante poder resaltar en la actualidad mediante a una imagen diferente!</p>
-            <p class="servicios__desarrollop">Hoy en día es vital poder mantener una página activa, única y actualizada constantemente!</p>
-            <p class="servicios__marketingp">En la actualidad la forma más efectiva de vender tu producto es llegar y contactar a tus clientes a toda hora y por la mayor cantidad de medios posibles!. Invertí en tu visibilidad en redes que tiene rentabilidad asegurada.</p>   
-        </div>         
+
+        <div class="servicios container"> 
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../img/diseño.svg" class="d-block w-100" alt="Diseño personalizado" id="servicios_img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Diseño personalizado</h5>
+                        <p>Mejoramos y desarrollamos tu marca. Es importante poder resaltar en la actualidad mediante a una imagen diferente!</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/desarrollo.svg" class="d-block w-100" alt="Desarrollo Web" id="servicios_img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Desarrollo Web</h5>
+                        <p>Desarrollo tu sitio de manera personalizada. Hoy en día es vital poder mantener una página activa, única y actualizada constantemente!.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/marketing.svg" class="d-block w-100" alt="Marketing Digital" id="servicios_img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Marketing Digital y Redes</h5>
+                        <p>Te ayudamos a alcanzar y estar en contacto con más clientes. En la actualidad la forma más efectiva de vender tu producto es llegar y contactar a tus clientes a toda hora y por la mayor cantidad de medios posibles!. Invertí en tu visibilidad en redes que tiene rentabilidad asegurada.</p>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+
     </main>
 
 <!--fin header-->  
@@ -70,5 +100,6 @@
 
 <!--fin header-->  
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

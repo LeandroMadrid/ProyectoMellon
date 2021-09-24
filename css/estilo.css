@@ -285,14 +285,17 @@ p{
 
 /*Main Servicios*/
 
+.servicios__titulo{
+    margin: 25px;
+    padding: 10px;
+    text-align: left;
+    font-size: 2rem;
+    color: #ea625a;
+    font-weight: bold;
+}
+
+
 .servicios{
-    display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: auto;
-    grid-row-gap: 10px;
-    grid-template-areas:"serv1 serv2 serv3"
-                         "t1     t2  t3"
-                         "p1     p2  p3";
     margin: 25px;
     padding: 10px;
     align-items: top;  
@@ -300,69 +303,30 @@ p{
     border-radius: 10px; 
 }
 
-.servicios h3{
-    font-size: 1.5rem;
+h5{
+    font-size: 2rem;
+    color: #ea625a;
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
 }
 
 .servicios p{
-    font-size: 1rem;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    background-color: #e0e5e9;
+    border-radius: 10px; 
 }
 
-.servicios__diseño{
-    grid-area: serv1;
-    padding: 10px;
-    text-align: left;
+
+#servicios_img{
+    height: 70vh;
 }
 
-.servicios__desarrollo{
-    grid-area: serv2;
-    padding: 10px;
-    text-align: left;
-}
 
-.servicios__marketing{
-    grid-area: serv3;
-    padding: 10px;
-    text-align: left;
-}
-
-.servicios__diseño2{
-    grid-area: t1;
-    padding: 10px;
-    text-align: left;
-}
-
-.servicios__desarrollo2{
-    grid-area: t2;
-    padding: 10px;
-    text-align: left;
-}
-
-.servicios__marketing2{
-    grid-area: t3;
-    padding: 10px;
-    text-align: left;
-}
-
-.servicios__diseñop{
-    grid-area: p1;
-    padding: 10px;
-    text-align: left;
-}
-
-.servicios__desarrollop{
-    grid-area: p2;
-    padding: 10px;
-    text-align: left;
-}
-
-.servicios__marketingp{
-    grid-area: p3;
-    padding: 10px;
-    text-align: left;
-}
 
 .contenedor2{
+
     margin: 25px;
     padding: 10px;
     align-items: top;  
@@ -371,101 +335,8 @@ p{
     border-radius: 10px; 
 }
 
-/*Main Servicios Movil*/
 
-@media only screen and (max-width: 950px){
-    .servicios{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        grid-row-gap: 5px;
-        grid-template-areas:"serv1"
-                             "t1"
-                             "p1"
-                             "serv2"
-                             "t2"
-                             "p2"
-                             "serv3"
-                             "t3"
-                             "p3";
-        margin: 25px;
-        padding: 10px;
-        align-items: top;  
-        background-color: #e0e5e9;   
-        border-radius: 10px; 
-    }
-    
-    .servicios h3{
-        font-size: 1rem;
-    }
-    
-    .servicios p{
-        font-size: 1rem;
-    }
-    
-    .servicios__diseño{
-        grid-area: serv1;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__desarrollo{
-        grid-area: serv2;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__marketing{
-        grid-area: serv3;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__diseño2{
-        grid-area: t1;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__desarrollo2{
-        grid-area: t2;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__marketing2{
-        grid-area: t3;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__diseñop{
-        grid-area: p1;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__desarrollop{
-        grid-area: p2;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .servicios__marketingp{
-        grid-area: p3;
-        padding: 5px;
-        text-align: left;
-    }
-    
-    .contenedor2{
-        margin: 25px;
-        padding: 10px;
-        align-items: top;  
-        justify-items: center;  
-        background-color: #e0e5e9;   
-        border-radius: 10px; 
-    }
-}
+
 
 /*Main clientes PC*/
 

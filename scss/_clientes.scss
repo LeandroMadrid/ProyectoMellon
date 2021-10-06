@@ -1,0 +1,155 @@
+.clientes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas:"cliente1 cliente2 cliente3"
+                         "cliente1p cliente2p cliente3p";
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+.servicios h3{
+    font-size: 1rem;
+}
+
+.servicios p{
+    font-size: 1rem;
+}
+
+.cliente1{
+    grid-area: cliente1;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente1p{
+    grid-area: cliente1p;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente2{
+    grid-area: cliente2;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente2p{
+    grid-area: cliente2p;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente3{
+    grid-area: cliente3;
+    padding: 5px;
+    text-align: left;
+}
+
+.cliente3p{
+    grid-area: cliente3p;
+    padding: 5px;
+    text-align: left;
+}
+
+.contenedor2{
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    justify-items: center;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+.clientes a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*Main clientes Movil*/
+
+@media only screen and (max-width: 950px){
+    .clientes{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 5px;
+        grid-template-areas:"cliente1"
+                             "cliente1p"
+                             "cliente2"
+                             "cliente2p"
+                             "cliente3"
+                             "cliente3p";
+        margin: 25px;
+        padding: 10px;
+        align-items: top;  
+        background-color: #e0e5e9;   
+        border-radius: 10px; 
+    }
+    
+    .servicios h3{
+        font-size: 1rem;
+    }
+    
+    .servicios p{
+        font-size: 1rem;
+    }
+    
+    .cliente1{
+        grid-area: cliente1;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente1p{
+        grid-area: cliente1p;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente2{
+        grid-area: cliente2;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente2p{
+        grid-area: cliente2p;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente3{
+        grid-area: cliente3;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .cliente3p{
+        grid-area: cliente3p;
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .contenedor2{
+        margin: 25px;
+        padding: 10px;
+        align-items: top;  
+        justify-items: center;  
+        background-color: #e0e5e9;   
+        border-radius: 10px; 
+    }
+
+    .clientes a{
+        text-decoration: none;
+        color: black;
+    }
+}
+

@@ -1,0 +1,62 @@
+.servicios__titulo{
+    margin: 25px;
+    padding: 10px;
+    text-align: left;
+    font-size: 2rem;
+    color: $coloPrincipal;
+    font-weight: bold;
+}
+
+
+.servicios{
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+h5{
+    font-size: 2rem;
+    color: $coloPrincipal;
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+.servicios p{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    background-color: #e0e5e9;
+    border-radius: 10px; 
+}
+
+
+#servicios_img{
+    height: 70vh;
+}
+
+
+
+.contenedor2{
+    margin: 25px;
+    padding: 10px;
+    align-items: top;  
+    justify-items: center;  
+    background-color: #e0e5e9;   
+    border-radius: 10px; 
+}
+
+
+@media only screen and (max-width: 950px){
+    .servicios p{
+        font-size: 1rem;
+        color: black;
+        font-weight: bold;
+        background-color: #e0e5e9;
+        border-radius: 10px; 
+    
+    }
+    
+
+}
